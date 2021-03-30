@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  <title>Admin Form</title>
+</head>
+<body>
+<div class="sidenav">
+         <div class="login-main-text">
+           
+<form action="insert.php" method="POST">           
+<table class="center">
+
+   <tr>
+    <td id = "table_details">Student ID :</td>
+    <td><input type="text" name="id" required></td>
+   </tr>
+
+   <tr>
+    <td id = "table_details">Student Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td id = "table_details">Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td id = "table_details">Gender :</td>
+    <td id = "table_details">
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+    </td>
+   </tr>
+   <tr>
+    <td id = "table_details">Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td id = "table_details">Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="91">+91</option>
+     </select>
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+
+   <tr>
+    <td id = "table_details">Fee ID :</td>
+    <td><input type="text" name="fee_id" required></td>
+   </tr>
+
+   <tr>
+    <td id = "table_details">Total Amount :</td>
+    <td><input type="text" name="total_amount" required></td>
+   </tr>
+
+  <tr>
+    <td id = "table_details">Due Date :</td>
+    <td><input type="text" name="due_date" required></td>
+   </tr>
+
+  <tr>
+    <td id = "table_details">Status :</td>
+    <td><input type="text" name="status" required></td>
+  </tr>
+
+
+   <tr>
+
+   </tr>
+
+  </table>
+          
+           
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+               <form action="student.php" method="POST">
+                  <div class="form-group">
+                    <img src="https://img.freepik.com/free-vector/illustration-document-icon_53876-28510.jpg?size=626&ext=jpg" width = "100px"/>
+                    <label id ="admin_txt">ADMIN FORM </label>
+                    
+                   
+<!--                      <input type="text" class="form-control" placeholder="User Name" name="id" required> -->
+                  </div>
+                  <div class="form-group">
+<!--                      <label>Password</label> -->
+<!--                      <input type="password" class="form-control" placeholder="Password" name="Password" required> -->
+                  </div>
+                  <button type="submit" class="btn btn-black">Submit</button>
+<!--                   <input type="submit" name="btnSubmit" value="Submit" onClick="Submit, class="btn-black" ">  -->
+               </form>
+              
+            </div>
+         </div>
+      </div>
+
+<!--       <div class="lef"> 
+             <h1 class="lef">G-pay</h1>
+       </div> -->
+
+</body>
+</html>
+
+</style>
+
+<style>
+  body {
+    background: #000;
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #000;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #FFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    /*background-color: #000 !important;*/
+    color: #fff;
+    background-color: #DDD9D9;
+  border: solid black;
+  border-radius : 5px;
+  color: black;
+  padding: 12px 75px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-black:hover {
+  /* Darker background on mouse-over */
+  background-color: black;
+  color : gold;
+  boder-style  : solid;
+  border-color : white;
+  border-width: 2px;
+}
+  
+#table_details{
+     color :  black;
+     font-family: sans-serif;
+     
+    
+  }
+  #admin_txt{
+    color :  white;
+    font-size : 80px
+  }
+  
+  .lef{ 
+	text-align: right;
+	bottom: 0px;
+	width: 100%;
+  color:white;
+  }
+ 
+</style>
